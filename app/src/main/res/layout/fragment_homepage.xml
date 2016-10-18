@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    tools:context="com.qualifylabs.devicelab.android.referenceapp.Fragments.homepage">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mid_margin"
+        style="@style/QLLargeHeadline"
+        android:textStyle="bold"
+        android:text="@string/ql_homepage_headline"
+        android:contentDescription="@string/ql_homepage_headline_content_description"
+        android:id="@+id/homepage_headline"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mid_margin"
+        style="@style/QLMidHeadLine"
+        android:text="@string/ql_homepage_subtitle"
+        android:contentDescription="@string/ql_homepage_subheader_content_description"
+        android:id="@+id/homepage_subheadline"/>
+</LinearLayout>

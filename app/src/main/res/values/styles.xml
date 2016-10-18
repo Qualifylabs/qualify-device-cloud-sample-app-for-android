@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <style name="QLMaterialTheme" parent="QLMaterialTheme.Base">
+
+    </style>
+
+    <style name="QLMaterialTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Main theme colors -->
+        <!--   your app branding color for the app bar -->
+        <item name="colorPrimary">@color/custom_blue</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/custom_blue</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/custom_blue</item>
+
+        <item name="android:spinnerDropDownItemStyle">
+            @style/QLSpinnerDropDownStyle
+        </item>
+        <item name="android:spinnerItemStyle">
+            @style/QLSpinnerItemStyle
+        </item>
+    </style>
+
+    <style name="QLSpinnerItemStyle">
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">@dimen/mid_font_size</item>
+    </style>
+    <style name="QLSpinnerDropDownStyle">
+        <item name="android:padding">20dp</item>
+        <item name="android:textSize">@dimen/large_font_size</item>
+    </style>
+
+</resources>

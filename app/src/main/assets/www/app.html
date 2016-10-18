@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+<script src= "angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="controller">
+
+<div class="form-group">
+	<label for="first-name-form">First Name:</label>
+	<input class="form-control" type="text" ng-model="firstName" id="first-name-form">
+	<label for="last-name-form">Last Name:</label>
+	<input class="form-control" type="text" ng-model="lastName" id="last-name-form">
+</div>
+<br>
+<h3>Hello!<div id="full_name">{{firstName + " " + lastName}}</div></h3>
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('controller', function($scope) {
+	$scope.firstName = "Seattle";
+	$scope.lastName = "Washington";
+});
+</script>
+
+</body>
+</html>
+
